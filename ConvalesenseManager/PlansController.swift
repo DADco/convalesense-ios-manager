@@ -32,8 +32,17 @@ class PlansController: UITableViewController, APISessionConsumer {
           refreshControl.endRefreshing()
         }
         if let plans = plans {
-          self.currentPlan = plans.first!
-          self.previousPlans = plans
+          if let firstPlan = plans.first {
+            self.currentPlan = firstPlan
+          } else {
+            self.currentPlan = nil
+          }
+          
+          if plans.count > 1 {
+            self.previousPlans = Array(plans.dropFirst(1))
+          } else {
+            self.previousPlans = []
+          }
           
           self.reloadData()
         }
@@ -49,7 +58,8 @@ class PlansController: UITableViewController, APISessionConsumer {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-        
+    //navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "LakkiReddy", size: 20)!]
+
     let refreshControl = UIRefreshControl()
     refreshControl.addTarget(self, action: #selector(refersh(_:)), for: .valueChanged)
     tableView.refreshControl = refreshControl

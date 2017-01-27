@@ -298,4 +298,5 @@
         <image name="congratulations" width="266" height="191"/>
         <image name="plant 1" width="185" height="169"/>
     </resources>
+    <color key="tintColor" red="0.59515124559999999" green="0.61849540469999997" blue="0.68493348359999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
