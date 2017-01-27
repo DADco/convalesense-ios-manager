@@ -49,7 +49,7 @@ class PlansController: UITableViewController, APISessionConsumer {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+        
     let refreshControl = UIRefreshControl()
     refreshControl.addTarget(self, action: #selector(refersh(_:)), for: .valueChanged)
     tableView.refreshControl = refreshControl

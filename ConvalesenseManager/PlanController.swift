@@ -68,6 +68,7 @@ class ExerciseTableViewCell: UITableViewCell {
   @IBOutlet var iconView: UIImageView!
   @IBOutlet var nameLabel: UILabel!
   @IBOutlet var notesLabel: UILabel!
+  @IBOutlet var guidelinesLabel: UILabel!
   
   func configure(with exercise: Exercise) {
     if exercise.name == "Finger Strength" {
@@ -80,5 +81,6 @@ class ExerciseTableViewCell: UITableViewCell {
     
     nameLabel.text = exercise.name
     notesLabel.text = exercise.notes
+    guidelinesLabel.text = exercise.guidelines
   }
 }

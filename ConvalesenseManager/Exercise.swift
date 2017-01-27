@@ -14,7 +14,9 @@ struct Exercise {
   let notes: String
   let count: Int
   let excerciseType: String
+  let guidelines: String
   let repetitions: Int?
+  let weight: Float?
   let duration: TimeInterval?
   
   init?(json: [String: Any]) {
@@ -22,7 +24,8 @@ struct Exercise {
       let name = json["name"] as? String,
       let notes = json["description"] as? String,
       let count = json["count"] as? Int,
-      let excerciseType = json["type"] as? String else {
+      let excerciseType = json["type"] as? String,
+      let guidelines = json["guidelines"] as? String else {
       return nil
     }
     
@@ -31,23 +34,15 @@ struct Exercise {
     self.notes = notes
     self.count = count
     self.excerciseType = excerciseType
+    self.guidelines = guidelines
     self.repetitions = json["repetitions"] as? Int
+    self.weight = json["weight"] as? Float
     
     if let duartionInt = json["duration"] as? Int {
       duration = TimeInterval(duartionInt)
     } else {
       duration = nil
     }
-  }
-  
-  init(id: Int, name: String, notes: String, count: Int, excerciseType: String, repetitions: Int?, duration: TimeInterval?) {
-    self.id = id
-    self.name = name
-    self.notes = notes
-    self.count = count
-    self.excerciseType = excerciseType
-    self.repetitions = repetitions
-    self.duration = duration
   }
 }
 
