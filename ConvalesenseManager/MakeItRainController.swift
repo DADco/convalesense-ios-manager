@@ -78,27 +78,30 @@ class MakeItRainController: UIViewController, APISessionConsumer {
   
   func tapCountDidChange() {
     let completeRatio = Float(tapCount) / Float(exercise.repetitions!)
-    if completeRatio < 0.1 {
+    if completeRatio < 0.2 {
       if imageView.image != #imageLiteral(resourceName: "plant 1") {
         imageView.image = #imageLiteral(resourceName: "plant 1")
         playPlantGrowSound()
       }
-    } else if completeRatio < 0.3 {
+    } else if completeRatio < 0.4 {
       if imageView.image != #imageLiteral(resourceName: "plant 2") {
         imageView.image = #imageLiteral(resourceName: "plant 2")
         playPlantGrowSound()
       }
-    } else if completeRatio < 0.4 {
+    } else if completeRatio < 0.5 {
       if imageView.image != #imageLiteral(resourceName: "plant 3") {
         imageView.image = #imageLiteral(resourceName: "plant 3")
+        playPlantGrowSound()
       }
-    } else if completeRatio < 0.6 {
+    } else if completeRatio < 0.7 {
       if imageView.image != #imageLiteral(resourceName: "plant 4") {
         imageView.image = #imageLiteral(resourceName: "plant 4")
+        playPlantGrowSound()
       }
-    } else if completeRatio < 0.8 {
+    } else if completeRatio < 1.0 {
       if imageView.image != #imageLiteral(resourceName: "plant 5") {
         imageView.image = #imageLiteral(resourceName: "plant 5")
+        playPlantGrowSound()
       }
     } else {
       imageView.image = #imageLiteral(resourceName: "plant 6")
@@ -109,6 +112,7 @@ class MakeItRainController: UIViewController, APISessionConsumer {
     end = Date()
     isFinished = true
     peripheralScanner = nil
+    playExerciseFinishedSound()
     performSegue(withIdentifier: "Finished", sender: self)
     
     guard let start = start, let end = end else {
@@ -123,6 +127,23 @@ class MakeItRainController: UIViewController, APISessionConsumer {
   func playPlantGrowSound() {
     let filename = "PlantGrow"
     let ext = "mp3"
+    
+    if let soundUrl = Bundle.main.url(forResource: filename, withExtension: ext) {
+      var soundId: SystemSoundID = 0
+      
+      AudioServicesCreateSystemSoundID(soundUrl as CFURL, &soundId)
+      
+      AudioServicesAddSystemSoundCompletion(soundId, nil, nil, { (soundId, clientData) -> Void in
+        AudioServicesDisposeSystemSoundID(soundId)
+      }, nil)
+      
+      AudioServicesPlaySystemSound(soundId)
+    }
+  }
+  
+  func playExerciseFinishedSound() {
+    let filename = "ExerciseFinished"
+    let ext = "wav"
     
     if let soundUrl = Bundle.main.url(forResource: filename, withExtension: ext) {
       var soundId: SystemSoundID = 0

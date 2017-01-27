@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		96109E261E3B561000D99480 /* PlantGrow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96109E251E3B561000D99480 /* PlantGrow.mp3 */; };
-		96109E2A1E3B595300D99480 /* RainDrop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 96109E291E3B595300D99480 /* RainDrop.wav */; };
+		96109E2C1E3B5D6900D99480 /* RainDrop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 96109E2B1E3B5D6900D99480 /* RainDrop.wav */; };
+		96109E301E3B624F00D99480 /* ExerciseFinished.wav in Resources */ = {isa = PBXBuildFile; fileRef = 96109E2F1E3B624F00D99480 /* ExerciseFinished.wav */; };
+		96109E321E3B63D900D99480 /* LakkiReddy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96109E311E3B63D900D99480 /* LakkiReddy-Regular.ttf */; };
 		967B9C7B1E39F9E9006F403B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967B9C7A1E39F9E9006F403B /* AppDelegate.swift */; };
 		967B9C801E39F9E9006F403B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967B9C7E1E39F9E9006F403B /* Main.storyboard */; };
 		967B9C831E39F9E9006F403B /* ConvalesenseManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 967B9C811E39F9E9006F403B /* ConvalesenseManager.xcdatamodeld */; };
@@ -28,7 +30,9 @@
 
 /* Begin PBXFileReference section */
 		96109E251E3B561000D99480 /* PlantGrow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PlantGrow.mp3; sourceTree = "<group>"; };
-		96109E291E3B595300D99480 /* RainDrop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = RainDrop.wav; sourceTree = "<group>"; };
+		96109E2B1E3B5D6900D99480 /* RainDrop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = RainDrop.wav; sourceTree = "<group>"; };
+		96109E2F1E3B624F00D99480 /* ExerciseFinished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ExerciseFinished.wav; sourceTree = "<group>"; };
+		96109E311E3B63D900D99480 /* LakkiReddy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LakkiReddy-Regular.ttf"; sourceTree = "<group>"; };
 		967B9C771E39F9E9006F403B /* ConvalesenseManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvalesenseManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967B9C7A1E39F9E9006F403B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		967B9C7F1E39F9E9006F403B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,7 +99,9 @@
 				967B9C891E39F9E9006F403B /* Info.plist */,
 				967B9C811E39F9E9006F403B /* ConvalesenseManager.xcdatamodeld */,
 				96109E251E3B561000D99480 /* PlantGrow.mp3 */,
-				96109E291E3B595300D99480 /* RainDrop.wav */,
+				96109E2B1E3B5D6900D99480 /* RainDrop.wav */,
+				96109E2F1E3B624F00D99480 /* ExerciseFinished.wav */,
+				96109E311E3B63D900D99480 /* LakkiReddy-Regular.ttf */,
 			);
 			path = ConvalesenseManager;
 			sourceTree = "<group>";
@@ -162,9 +168,11 @@
 			files = (
 				96109E261E3B561000D99480 /* PlantGrow.mp3 in Resources */,
 				967B9C881E39F9E9006F403B /* LaunchScreen.storyboard in Resources */,
-				96109E2A1E3B595300D99480 /* RainDrop.wav in Resources */,
+				96109E301E3B624F00D99480 /* ExerciseFinished.wav in Resources */,
+				96109E2C1E3B5D6900D99480 /* RainDrop.wav in Resources */,
 				967B9C851E39F9E9006F403B /* Assets.xcassets in Resources */,
 				967B9C801E39F9E9006F403B /* Main.storyboard in Resources */,
+				96109E321E3B63D900D99480 /* LakkiReddy-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

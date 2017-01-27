@@ -47,5 +47,9 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>LakkiReddy-Regular</string>
+	</array>
 </dict>
 </plist>

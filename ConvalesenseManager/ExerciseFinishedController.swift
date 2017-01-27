@@ -14,6 +14,9 @@ class ExerciseFinishedController: UIViewController {
     
     navigationItem.titleView = UIImageView(image:#imageLiteral(resourceName: "convalesense"))
     navigationItem.setHidesBackButton(true, animated: false)
+    
+    modalTransitionStyle = .crossDissolve
+    modalPresentationStyle = .overFullScreen
   }
   
   @IBAction func done(_ sender: AnyObject) {
