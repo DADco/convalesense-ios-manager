@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       
     }
     
+    application.isIdleTimerDisabled = true
+    
     UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: UIFont(name: "LakkiReddy", size: 22)!]
     UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "LakkiReddy", size: 16)!], for: UIControlState.normal)
 
