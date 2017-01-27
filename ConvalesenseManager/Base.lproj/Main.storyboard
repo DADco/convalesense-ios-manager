@@ -207,7 +207,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPk-DQ-PBl">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPk-DQ-PBl">
                                             <rect key="frame" x="104" y="55.5" width="243" height="21"/>
                                             <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -221,6 +221,7 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="bGC-2e-J0p" secondAttribute="trailing" constant="20" id="Jb3-3u-XwZ"/>
                                         <constraint firstItem="tPk-DQ-PBl" firstAttribute="leading" secondItem="vn3-Rv-pOe" secondAttribute="trailing" constant="20" id="Kto-PU-kLE"/>
                                         <constraint firstItem="vn3-Rv-pOe" firstAttribute="leading" secondItem="S9V-AG-FGP" secondAttribute="leading" constant="20" id="PJz-z4-Jb8"/>
+                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="tPk-DQ-PBl" secondAttribute="bottom" constant="20" id="VaX-rJ-AC1"/>
                                         <constraint firstItem="bGC-2e-J0p" firstAttribute="top" secondItem="S9V-AG-FGP" secondAttribute="topMargin" constant="15" id="i7D-Ih-rhg"/>
                                         <constraint firstItem="vn3-Rv-pOe" firstAttribute="top" secondItem="S9V-AG-FGP" secondAttribute="top" constant="20" id="zax-9U-xXJ"/>
                                     </constraints>

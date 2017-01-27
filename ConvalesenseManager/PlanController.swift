@@ -26,7 +26,8 @@ class PlanController: UITableViewController, APISessionConsumer {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.estimatedRowHeight = 106
     reloadData()
   }
   
