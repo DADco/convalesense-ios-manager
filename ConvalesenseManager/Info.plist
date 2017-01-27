@@ -50,6 +50,14 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>LakkiReddy-Regular</string>
+		<string>Cabin-SemiBoldItalic.ttf</string>
+		<string>Cabin-SemiBold.ttf</string>
+		<string>Cabin-Medium.ttf</string>
+		<string>Cabin-Regular.ttf</string>
+		<string>Cabin-Bold.ttf</string>
+		<string>Cabin-Italic.ttf</string>
+		<string>Cabin-BoldItalic.ttf</string>
+		<string>Cabin-MediumItalic.ttf</string>
 	</array>
 </dict>
 </plist>

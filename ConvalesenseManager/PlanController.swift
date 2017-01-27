@@ -15,7 +15,7 @@ class PlanController: UITableViewController, APISessionConsumer {
   required init?(coder: NSCoder) {
     super.init(coder: coder)
     
-    title = "Session"
+    title = "Exercises"
   }
     
   func reloadData() {
@@ -64,9 +64,20 @@ class PlanController: UITableViewController, APISessionConsumer {
 class ExerciseTableViewCell: UITableViewCell {
   static let reuseIdentifier: String = "ExerciseTableViewCell"
   
+  @IBOutlet var iconView: UIImageView!
   @IBOutlet var nameLabel: UILabel!
+  @IBOutlet var notesLabel: UILabel!
   
   func configure(with exercise: Exercise) {
+    if exercise.name == "Finger Strength" {
+      iconView.image = #imageLiteral(resourceName: "FingerStrength")
+    } else if exercise.name == "Arm Strength" {
+      iconView.image = #imageLiteral(resourceName: "ArmStrength")
+    } else {
+      iconView.image = #imageLiteral(resourceName: "PowerReflex")
+    }
+    
     nameLabel.text = exercise.name
+    notesLabel.text = exercise.notes
   }
 }

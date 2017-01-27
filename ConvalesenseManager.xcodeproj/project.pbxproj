@@ -11,6 +11,14 @@
 		96109E2C1E3B5D6900D99480 /* RainDrop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 96109E2B1E3B5D6900D99480 /* RainDrop.wav */; };
 		96109E301E3B624F00D99480 /* ExerciseFinished.wav in Resources */ = {isa = PBXBuildFile; fileRef = 96109E2F1E3B624F00D99480 /* ExerciseFinished.wav */; };
 		96109E321E3B63D900D99480 /* LakkiReddy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96109E311E3B63D900D99480 /* LakkiReddy-Regular.ttf */; };
+		96109E3D1E3B67EC00D99480 /* Cabin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96109E351E3B67EC00D99480 /* Cabin-Bold.ttf */; };
+		96109E3E1E3B67EC00D99480 /* Cabin-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96109E361E3B67EC00D99480 /* Cabin-BoldItalic.ttf */; };
+		96109E3F1E3B67EC00D99480 /* Cabin-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96109E371E3B67EC00D99480 /* Cabin-Italic.ttf */; };
+		96109E401E3B67EC00D99480 /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96109E381E3B67EC00D99480 /* Cabin-Medium.ttf */; };
+		96109E411E3B67EC00D99480 /* Cabin-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96109E391E3B67EC00D99480 /* Cabin-MediumItalic.ttf */; };
+		96109E421E3B67EC00D99480 /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96109E3A1E3B67EC00D99480 /* Cabin-Regular.ttf */; };
+		96109E431E3B67EC00D99480 /* Cabin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96109E3B1E3B67EC00D99480 /* Cabin-SemiBold.ttf */; };
+		96109E441E3B67EC00D99480 /* Cabin-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96109E3C1E3B67EC00D99480 /* Cabin-SemiBoldItalic.ttf */; };
 		967B9C7B1E39F9E9006F403B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967B9C7A1E39F9E9006F403B /* AppDelegate.swift */; };
 		967B9C801E39F9E9006F403B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967B9C7E1E39F9E9006F403B /* Main.storyboard */; };
 		967B9C831E39F9E9006F403B /* ConvalesenseManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 967B9C811E39F9E9006F403B /* ConvalesenseManager.xcdatamodeld */; };
@@ -33,6 +41,14 @@
 		96109E2B1E3B5D6900D99480 /* RainDrop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = RainDrop.wav; sourceTree = "<group>"; };
 		96109E2F1E3B624F00D99480 /* ExerciseFinished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ExerciseFinished.wav; sourceTree = "<group>"; };
 		96109E311E3B63D900D99480 /* LakkiReddy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LakkiReddy-Regular.ttf"; sourceTree = "<group>"; };
+		96109E351E3B67EC00D99480 /* Cabin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Bold.ttf"; sourceTree = "<group>"; };
+		96109E361E3B67EC00D99480 /* Cabin-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-BoldItalic.ttf"; sourceTree = "<group>"; };
+		96109E371E3B67EC00D99480 /* Cabin-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Italic.ttf"; sourceTree = "<group>"; };
+		96109E381E3B67EC00D99480 /* Cabin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Medium.ttf"; sourceTree = "<group>"; };
+		96109E391E3B67EC00D99480 /* Cabin-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-MediumItalic.ttf"; sourceTree = "<group>"; };
+		96109E3A1E3B67EC00D99480 /* Cabin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Regular.ttf"; sourceTree = "<group>"; };
+		96109E3B1E3B67EC00D99480 /* Cabin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBold.ttf"; sourceTree = "<group>"; };
+		96109E3C1E3B67EC00D99480 /* Cabin-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		967B9C771E39F9E9006F403B /* ConvalesenseManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvalesenseManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967B9C7A1E39F9E9006F403B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		967B9C7F1E39F9E9006F403B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +118,14 @@
 				96109E2B1E3B5D6900D99480 /* RainDrop.wav */,
 				96109E2F1E3B624F00D99480 /* ExerciseFinished.wav */,
 				96109E311E3B63D900D99480 /* LakkiReddy-Regular.ttf */,
+				96109E351E3B67EC00D99480 /* Cabin-Bold.ttf */,
+				96109E361E3B67EC00D99480 /* Cabin-BoldItalic.ttf */,
+				96109E371E3B67EC00D99480 /* Cabin-Italic.ttf */,
+				96109E381E3B67EC00D99480 /* Cabin-Medium.ttf */,
+				96109E391E3B67EC00D99480 /* Cabin-MediumItalic.ttf */,
+				96109E3A1E3B67EC00D99480 /* Cabin-Regular.ttf */,
+				96109E3B1E3B67EC00D99480 /* Cabin-SemiBold.ttf */,
+				96109E3C1E3B67EC00D99480 /* Cabin-SemiBoldItalic.ttf */,
 			);
 			path = ConvalesenseManager;
 			sourceTree = "<group>";
@@ -170,7 +194,15 @@
 				967B9C881E39F9E9006F403B /* LaunchScreen.storyboard in Resources */,
 				96109E301E3B624F00D99480 /* ExerciseFinished.wav in Resources */,
 				96109E2C1E3B5D6900D99480 /* RainDrop.wav in Resources */,
+				96109E441E3B67EC00D99480 /* Cabin-SemiBoldItalic.ttf in Resources */,
+				96109E3F1E3B67EC00D99480 /* Cabin-Italic.ttf in Resources */,
+				96109E431E3B67EC00D99480 /* Cabin-SemiBold.ttf in Resources */,
+				96109E421E3B67EC00D99480 /* Cabin-Regular.ttf in Resources */,
+				96109E401E3B67EC00D99480 /* Cabin-Medium.ttf in Resources */,
 				967B9C851E39F9E9006F403B /* Assets.xcassets in Resources */,
+				96109E411E3B67EC00D99480 /* Cabin-MediumItalic.ttf in Resources */,
+				96109E3D1E3B67EC00D99480 /* Cabin-Bold.ttf in Resources */,
+				96109E3E1E3B67EC00D99480 /* Cabin-BoldItalic.ttf in Resources */,
 				967B9C801E39F9E9006F403B /* Main.storyboard in Resources */,
 				96109E321E3B63D900D99480 /* LakkiReddy-Regular.ttf in Resources */,
 			);

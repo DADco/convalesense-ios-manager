@@ -16,24 +16,28 @@ final class APISession {
   }
   
   func fetchPlans(_ completionHandler: @escaping ([Plan]?, Error?) -> Void) {
-    let url = URL(string: "http://172.16.8.24:8000/api/plans")!
+    let url = URL(string: "http://172.16.8.24:8000/api/plans?ios")!
     let urlRequest = URLRequest(url: url)
     
     let dataTask = urlSession.dataTask(with: urlRequest) { (data, urlResponse, error) in
       if let error = error {
         completionHandler(nil, error)
       } else if let data = data {
-        let json = try! JSONSerialization.jsonObject(with: data, options: [])
-        
-        if let jsonCollection = json as? [[String: Any]] {
-          var plans: [Plan] = []
-          for jsonPlan in jsonCollection {
-            if let plan =  Plan(json: jsonPlan) {
-              plans.append(plan)
-            }
-          }
+        do {
+          let json = try JSONSerialization.jsonObject(with: data, options: [])
           
-          completionHandler(plans, error)
+          if let jsonCollection = json as? [[String: Any]] {
+            var plans: [Plan] = []
+            for jsonPlan in jsonCollection {
+              if let plan =  Plan(json: jsonPlan) {
+                plans.append(plan)
+              }
+            }
+            
+            completionHandler(plans, nil)
+          }
+        } catch let error {
+          completionHandler(nil, error)
         }
       }
     }
