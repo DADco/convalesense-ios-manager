@@ -8,15 +8,23 @@
 
 import UIKit
 import CoreData
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
-
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    do {
+      let audioSession = AVAudioSession.sharedInstance()
+      try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+      try audioSession.overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
+    } catch _ {
+      
+    }
+
     return true
   }
 
