@@ -19,6 +19,7 @@
 		96109E421E3B67EC00D99480 /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96109E3A1E3B67EC00D99480 /* Cabin-Regular.ttf */; };
 		96109E431E3B67EC00D99480 /* Cabin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96109E3B1E3B67EC00D99480 /* Cabin-SemiBold.ttf */; };
 		96109E441E3B67EC00D99480 /* Cabin-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96109E3C1E3B67EC00D99480 /* Cabin-SemiBoldItalic.ttf */; };
+		96109E461E3B700300D99480 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96109E451E3B700300D99480 /* Patient.swift */; };
 		967B9C7B1E39F9E9006F403B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967B9C7A1E39F9E9006F403B /* AppDelegate.swift */; };
 		967B9C801E39F9E9006F403B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967B9C7E1E39F9E9006F403B /* Main.storyboard */; };
 		967B9C831E39F9E9006F403B /* ConvalesenseManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 967B9C811E39F9E9006F403B /* ConvalesenseManager.xcdatamodeld */; };
@@ -49,6 +50,7 @@
 		96109E3A1E3B67EC00D99480 /* Cabin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Regular.ttf"; sourceTree = "<group>"; };
 		96109E3B1E3B67EC00D99480 /* Cabin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBold.ttf"; sourceTree = "<group>"; };
 		96109E3C1E3B67EC00D99480 /* Cabin-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		96109E451E3B700300D99480 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		967B9C771E39F9E9006F403B /* ConvalesenseManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvalesenseManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967B9C7A1E39F9E9006F403B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		967B9C7F1E39F9E9006F403B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				967B9CF31E3A8793006F403B /* PeripheralScanner.swift */,
 				967B9CF71E3B3CBA006F403B /* APISession.swift */,
 				967B9CF91E3B475C006F403B /* APISessionConsumer.swift */,
+				96109E451E3B700300D99480 /* Patient.swift */,
 				967B9CF51E3A88E1006F403B /* Date+ISO8601.swift */,
 				967B9C7E1E39F9E9006F403B /* Main.storyboard */,
 				967B9C841E39F9E9006F403B /* Assets.xcassets */,
@@ -218,6 +221,7 @@
 				967B9CEC1E3A6BE5006F403B /* Plan.swift in Sources */,
 				967B9CEA1E3A6915006F403B /* ExerciseFinishedController.swift in Sources */,
 				967B9CF41E3A8793006F403B /* PeripheralScanner.swift in Sources */,
+				96109E461E3B700300D99480 /* Patient.swift in Sources */,
 				967B9CE41E3A427C006F403B /* MakeItRainController.swift in Sources */,
 				967B9C831E39F9E9006F403B /* ConvalesenseManager.xcdatamodeld in Sources */,
 				967B9CB11E3A2E97006F403B /* PlansController.swift in Sources */,

@@ -19,9 +19,6 @@ class PlansController: UITableViewController, APISessionConsumer {
     
     title = "Plans"
     apiSession = APISession()
-    
-    currentPlan = Plan(id: 1, name: "name", notes: "notes", start: Date(), end: Date(), exercises: [Exercise(id: 1, name: "Name", notes: "Notes", count: 1, excerciseType: "Finger Strength", repetitions: 20, duration: nil)])
-    previousPlans = [Plan(id: 2, name: "Previous", notes: "notes", start: Date(), end: Date(), exercises: [])]
   }
   
   func refersh(_ sender: AnyObject?) {
@@ -56,6 +53,8 @@ class PlansController: UITableViewController, APISessionConsumer {
     let refreshControl = UIRefreshControl()
     refreshControl.addTarget(self, action: #selector(refersh(_:)), for: .valueChanged)
     tableView.refreshControl = refreshControl
+    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.estimatedRowHeight = 106
     refreshData()
     reloadData()
   }
@@ -131,16 +130,18 @@ class PlansController: UITableViewController, APISessionConsumer {
 class PlanTableViewCell: UITableViewCell {
   static let reuseIdentifier: String = "PlanTableViewCell"
   
+  @IBOutlet var patientNameLabel: UILabel!
   @IBOutlet var dateIntervalLabel: UILabel!
   @IBOutlet var nameLabel: UILabel!
+  @IBOutlet var notesLabel: UILabel!
   @IBOutlet var exercisesLabel: UILabel!
-  @IBOutlet var todayLabel: UILabel!
   
   func configure(with plan: Plan) {
+    patientNameLabel.text = plan.patient.name
     let dateIntervalFormatter = DateIntervalFormatter()
     dateIntervalLabel.text = dateIntervalFormatter.string(from: plan.start, to: plan.end)
     nameLabel.text = plan.name
-    exercisesLabel.text = "Exercises \(plan.exercises.count)"
-    todayLabel.text = "0 / \(plan.exercises.count)"
+    notesLabel.text = plan.notes
+    exercisesLabel.text = "Exercises: \(plan.exercises.count)"
   }
 }

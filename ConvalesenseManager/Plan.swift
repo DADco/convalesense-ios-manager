@@ -15,14 +15,17 @@ struct Plan {
   let start: Date
   let end: Date
   
+  let patient: Patient
+
   let exercises: [Exercise]
   
-  init(id: Int, name: String, notes: String, start: Date, end: Date, exercises: [Exercise]) {
+  init(id: Int, name: String, notes: String, start: Date, end: Date, patient: Patient, exercises: [Exercise]) {
     self.id = id
     self.name = name
     self.notes = notes
     self.start = start
     self.end = end
+    self.patient = patient
     self.exercises = exercises
   }
   
@@ -35,7 +38,11 @@ struct Plan {
       return nil
     }
     
-    guard let endRawValue = json["start"] as? String, let end = Date(ISO8601: endRawValue) else {
+    guard let endRawValue = json["end"] as? String, let end = Date(ISO8601: endRawValue) else {
+      return nil
+    }
+    
+    guard let patientJson = json["patient"] as? [String: Any], let patient = Patient(json: patientJson) else {
       return nil
     }
     
@@ -44,6 +51,8 @@ struct Plan {
     self.notes = notes
     self.start = start
     self.end = end
+    
+    self.patient = patient
     
     var exercises: [Exercise] = []
     
